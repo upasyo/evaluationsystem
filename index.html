@@ -245,9 +245,10 @@ table td input {
           }else if(per1>=25 && per1<=44){
           	document.getElementById("b3").innerHTML = "C";
            }
-          else{
-          	document.getElementById("b3").innerHTML = "D";
-            }
+          else if(per7<25){
+          	document.getElementById("b21").innerHTML = "D";
+            }else
+		    return " ";
 	}
             if(sum2!=""){
             if(per2>=90&&per2<=100){
@@ -263,9 +264,10 @@ table td input {
           }else if(per2>=25 && per2<=44){
           	document.getElementById("b6").innerHTML = "C";
            }
-          else{
-          	document.getElementById("b6").innerHTML = "D";
-            }
+                    else if(per7<25){
+          	document.getElementById("b21").innerHTML = "D";
+            }else
+		    return " ";
             }
             if(sum3!=""){
             if(per3>=90&&per3<=100){
@@ -281,9 +283,10 @@ table td input {
           }else if(per3>=25 && per3<=44){
           	document.getElementById("b9").innerHTML = "C";
            }
-          else{
-          	document.getElementById("b9").innerHTML = "D";
-            }
+                    else if(per7<25){
+          	document.getElementById("b21").innerHTML = "D";
+            }else
+		    return " ";
             }
             
             if(sum4!=""){
@@ -300,13 +303,14 @@ table td input {
           }else if(per4>=25 && per4<=44){
           	document.getElementById("b12").innerHTML = "C";
            }
-          else{
-          	document.getElementById("b12").innerHTML = "D";
-            }
+             else if(per7<25){
+          	document.getElementById("b21").innerHTML = "D";
+            }else
+		    return " ";
           }  
             if(sum5!=""){
             if(per5>=90&&per5<=100){
-			document.getElementById("b15").innerHTML = "A+";
+		document.getElementById("b15").innerHTML = "A+";
           }else if(per5>=80&&per5<=89){
         	document.getElementById("b15").innerHTML = "A" ;
           }else if(per5>=70&&per5<=79){
@@ -318,9 +322,10 @@ table td input {
           }else if(per5>=25 && per5<=44){
           	document.getElementById("b15").innerHTML = "C";
            }
-          else{
-          	document.getElementById("b15").innerHTML = "D";
-            }
+          else if(per7<25){
+          	document.getElementById("b21").innerHTML = "D";
+            }else
+		    return " ";
             }
             
             if(sum6!=""){
@@ -337,9 +342,10 @@ table td input {
           }else if(per6>=25 && per6<=44){
           	document.getElementById("b18").innerHTML = "C";
            }
-          else{
-          	document.getElementById("b18").innerHTML = "D";
-            }
+           else if(per7<25){
+          	document.getElementById("b21").innerHTML = "D";
+            }else
+		    return " ";
             
           }
           
@@ -357,9 +363,10 @@ table td input {
           }else if(per7>=25 && per7<=44){
           	document.getElementById("b21").innerHTML = "C";
            }
-          else{
+          else if(per7<25){
           	document.getElementById("b21").innerHTML = "D";
-            }
+            }else
+		    return " ";
             }
             
       }
