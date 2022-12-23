@@ -231,9 +231,9 @@ table td input {
         document.getElementById("b14").innerHTML = per5;
         document.getElementById("b17").innerHTML = per6;
         document.getElementById("b20").innerHTML = per7;
-        
-			if(per1>=90&&per1<=100){
-			document.getElementById("b3").innerHTML = "A+";
+        if(sum1!=""){
+	if(per1>=90&&per1<=100){
+	   document.getElementById("b3").innerHTML = "A+";
           }else if(per1>=80&&per1<=89){
         	document.getElementById("b3").innerHTML = "A" ;
           }else if(per1>=70&&per1<=79){
@@ -248,7 +248,7 @@ table td input {
           else{
           	document.getElementById("b3").innerHTML = "D";
             }
-            
+	}
             if(sum2!=""){
             if(per2>=90&&per2<=100){
 			document.getElementById("b6").innerHTML = "A+";
